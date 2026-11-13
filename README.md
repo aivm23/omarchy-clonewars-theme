@@ -105,7 +105,7 @@ Para desinstalar CloneWars por completo: `omarchy theme remove clonewars`.
 
 - **TUIs basadas en el terminal** (opencode, lazygit, etc.) heredan la paleta al arrancar; si ya estaban abiertas durante el cambio de tema, ciérralas y ábrelas de nuevo para ver la paleta nueva.
 - Sin vídeo de introducción al cambiar de fondo ni imagen de desbloqueo (`unlock.png`): el tema no aparece en *Appearance > Unlock*, pero la pantalla de bloqueo se colorea con la paleta.
-- Los iconos del sistema se fijan a `Yaru-sage` vía `icons.theme`.
+- Los iconos del sistema se fijan a `Yaru-blue` vía `icons.theme` (coherente con el acento azul/cian del tema).
 - Probado en una instalación con una sola pantalla; no se ha verificado el comportamiento con múltiples monitores ni con waybar/GTK fuera de lo que Omarchy gestiona por defecto.
 
 ## Procedencia de los fondos
