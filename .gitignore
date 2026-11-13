@@ -1,0 +1,14 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Copias de seguridad y temporales
+*.bak
+*.bak.*
+*~
+*.tmp
+*.swp
+
+# Artefactos locales de trabajo
+preview-work/

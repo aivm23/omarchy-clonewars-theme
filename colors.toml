@@ -1,0 +1,48 @@
+# CloneWars — tema oscuro para Omarchy
+# Identidad visual inspirada en The Clone Wars: azul marino profundo,
+# superficies de azul pizarra, texto claro cálido, acento cian y ámbar secundario.
+# Paleta derivada de los cuatro fondos del tema y ajustada para trabajo diario
+# con terminales y editores de código.
+# Probado con Omarchy 4.5.0-3.
+
+mode = "dark"
+
+# Acento principal (cian de las luces de atraque) y ámbar del atardecer.
+accent = "#5CCFE4"
+selection = "#2E4568"
+muted = "#7184A8"
+
+# Fondos: azul marino de los cielos al anochecer, de más claro a más profundo.
+background = "#132339"
+dark_background = "#0E1D30"
+darker_background = "#0B1626"
+lighter_background = "#20344E"
+
+# Texto claro ligeramente cálido (luz de las ventanas y farolas del atardecer).
+foreground = "#E6E1D3"
+dark_foreground = "#93A1B8"
+light_foreground = "#F0EBDD"
+bright_foreground = "#F8F4E8"
+
+# Bordes: el activo usa el acento cian (por defecto); el inactivo,
+# una pizarra apagada coherente con las estructuras de los fondos.
+hyprland_inactive_border = "#3E506C"
+
+# Colores ANSI base. Errores, advertencias, éxitos, enlaces y texto secundario
+# mantienen diferencias claras de tono y luminosidad sobre el fondo marino.
+red = "#E4646E"
+yellow = "#E2AE5C"
+orange = "#D98F5E"
+green = "#7EC592"
+cyan = "#5CCFE4"
+blue = "#7FA3E8"
+magenta = "#C795DB"
+brown = "#8A6A42"
+
+# Variantes brillantes (texto destacado, selección de listas, estados activos).
+bright_red = "#F2909A"
+bright_yellow = "#F2CC8A"
+bright_green = "#A9DEB4"
+bright_cyan = "#9BE9F4"
+bright_blue = "#A9C4F2"
+bright_magenta = "#DDBAE8"
