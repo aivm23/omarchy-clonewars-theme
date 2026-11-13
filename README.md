@@ -101,6 +101,16 @@ Al cambiar de vuelta, Omarchy restaura automáticamente el fondo que tenías en 
 
 Para desinstalar CloneWars por completo: `omarchy theme remove clonewars`.
 
+## Personalización opcional: apps GTK (Archivos, etc.)
+
+Omarchy colorea las apps GTK (Nautilus, diálogos…) con `Adwaita-dark` neutro + los iconos del tema. Si quieres que el fondo de esas ventanas use también el azul marino del tema, instala el hook opcional incluido, que regenera los colores libadwaita (`~/.config/gtk-4.0/gtk.css`) en cada cambio de tema a partir del `colors.toml` activo:
+
+```bash
+omarchy hook install theme-set ~/.config/omarchy/hooks/theme-set.d/gtk-colors.sh
+```
+
+Si el script aún no está en tu máquina, cópialo primero desde [`extras/gtk-colors-hook.sh`](extras/gtk-colors-hook.sh). Tras instalarlo, ejecuta `omarchy theme set clonewars` (o cualquier tema) para generar el CSS y abre de nuevo la app GTK. Al cambiar a otro tema, el hook lo adapta automáticamente; el hook es una personalización del usuario y no forma parte de los archivos que Omarchy aplica desde el repositorio.
+
 ## Limitaciones conocidas
 
 - **TUIs basadas en el terminal** (opencode, lazygit, etc.) heredan la paleta al arrancar; si ya estaban abiertas durante el cambio de tema, ciérralas y ábrelas de nuevo para ver la paleta nueva.
