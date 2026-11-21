@@ -76,17 +76,17 @@ omarchy theme bg current
 omarchy theme bg next
 
 # Cambiar un fondo concreto
-omarchy theme bg set ~/.config/omarchy/themes/clonewars/backgrounds/3-hangar-orbital.png
+omarchy theme bg set ~/.config/omarchy/themes/clonewars/backgrounds/3-hangar-orbital.webp
 ```
 
 También puedes cambiar de tema y fondo desde el menú de Omarchy (`Super + Alt + Space`).
 
 Fondos incluidos (generados con IA, ver más abajo):
 
-1. `1-ciudad-atardecer.png` — ciudad al atardecer (fondo inicial)
-2. `2-santuario-desierto.png` — santuario en un desierto al crepúsculo
-3. `3-hangar-orbital.png` — hangar orbital sobre un planeta azul
-4. `4-plataformas-oceano.png` — plataformas de laboratorio sobre el océano
+1. `1-ciudad-atardecer.webp` — ciudad al atardecer (fondo inicial)
+2. `2-santuario-desierto.webp` — santuario en un desierto al crepúsculo
+3. `3-hangar-orbital.webp` — hangar orbital sobre un planeta azul
+4. `4-plataformas-oceano.webp` — plataformas de laboratorio sobre el océano
 
 ## Volver al tema anterior
 
@@ -101,20 +101,11 @@ Al cambiar de vuelta, Omarchy restaura automáticamente el fondo que tenías en 
 
 Para desinstalar CloneWars por completo: `omarchy theme remove clonewars`.
 
-## Personalización opcional: apps GTK (Archivos, etc.)
-
-Omarchy colorea las apps GTK (Nautilus, diálogos…) con `Adwaita-dark` neutro + los iconos del tema. Si quieres que el fondo de esas ventanas use también el azul marino del tema, instala el hook opcional incluido, que regenera los colores libadwaita (`~/.config/gtk-4.0/gtk.css`) en cada cambio de tema a partir del `colors.toml` activo:
-
-```bash
-omarchy hook install theme-set ~/.config/omarchy/hooks/theme-set.d/gtk-colors.sh
-```
-
-Si el script aún no está en tu máquina, cópialo primero desde [`extras/gtk-colors-hook.sh`](extras/gtk-colors-hook.sh). Tras instalarlo, ejecuta `omarchy theme set clonewars` (o cualquier tema) para generar el CSS y abre de nuevo la app GTK. Al cambiar a otro tema, el hook lo adapta automáticamente; el hook es una personalización del usuario y no forma parte de los archivos que Omarchy aplica desde el repositorio.
-
 ## Limitaciones conocidas
 
 - **TUIs basadas en el terminal** (opencode, lazygit, etc.) heredan la paleta al arrancar; si ya estaban abiertas durante el cambio de tema, ciérralas y ábrelas de nuevo para ver la paleta nueva.
 - Sin vídeo de introducción al cambiar de fondo ni imagen de desbloqueo (`unlock.png`): el tema no aparece en *Appearance > Unlock*, pero la pantalla de bloqueo se colorea con la paleta.
+- **Apps GTK** (Nautilus, diálogos…): Omarchy las colorea con `Adwaita-dark` neutro + los iconos del tema; CloneWars no altera el fondo de sus ventanas.
 - Los iconos del sistema se fijan a `Yaru-blue` vía `icons.theme` (coherente con el acento azul/cian del tema).
 - Probado en una instalación con una sola pantalla; no se ha verificado el comportamiento con múltiples monitores ni con waybar/GTK fuera de lo que Omarchy gestiona por defecto.
 
